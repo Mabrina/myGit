@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LavvieBot</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link href="css/style.css?ver=1" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html"></a>
+    </div>
+
+    <button type="button" class="btn btn-default btn_subscribe" data-toggle="modal" data-target="#myModal">구독하기</button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="design.html">반려묘를 위한 설계</a></li>
+        <li><a href="litterbox.html">진정한 자동 화장실</a></li>
+        <li><a href="comfort.html">안락함</a></li>
+        <li><a href="purrsong.html">어플리케이션</a></li>
+        <li><a href="faq.html">제품 사양 & FAQ</a></li>
+        <li class="active"><a href="about.html">회사소개</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<section id="about1">
+  <div class="container">
+    <h1>회사소개</h1>
+  </div>
+</section>
+
+<section id="about2">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="inner_wrapper">
+          <h3 class="font-white">(주)골골송작곡가는</h3>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="inner_wrapper">
+          <p class="list">
+            반려인과 반려묘 사이의 교감과 이해라는 철학을 바탕으로 과학 기술을 활용하여 고양이들이 행복할 때 그르렁 소리 '골골송'을 만들어줄 수 있는 제품들을 만들어 나가고자 합니다.
+          </p>
+          <p class="list">
+            각 분야의 전문가들로 구성된 연구 조직을 보유하고 있는 회사로서 고양이와 고양이를 키우는 반려인 모두를 배려하는 하드웨어 / 소프트웨어 솔루션을 개발하고 있습니다.
+          </p>
+          <p class="list">
+            반려인이 반려묘로부터 받는 행복이라는 가치를 세상을 따뜻하게 하는 가치로 만들어 나가고자 합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="inner_wrapper">
+          <h3 class="font-white">연락처</h3>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="inner_wrapper">
+          <p class="list">
+            <span style="font-family:NotoSansCJKkr-Bold">PurrSong, Inc.</span><br><br>
+Company Registration Number: 765-86-00585<br><br>
+CEO: Taegu Noh<br><br>
+E-Mail: info@purrsong.com<br><br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-left">
+  <a href="about.html"><p>About Lavviebot</p></a>
+  <br>
+  <p>Copyright &copy; 2016 lavviebot All Rights Reserved.</p>
+</footer>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>라비봇의 새 소식과 공지를 뉴스레터로 받아보세요</p>
+        <div class="input-group my_search_input_group">
+          <input type="text" class="form-control my_input" placeholder="이메일 주소">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">구독하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>

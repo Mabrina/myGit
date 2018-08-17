@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LavvieBot</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link href="css/style.css?ver=1" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html"></a>
+    </div>
+
+    <button type="button" class="btn btn-default btn_subscribe" data-toggle="modal" data-target="#myModal">구독하기</button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="design.html">반려묘를 위한 설계</a></li>
+        <li class="active"><a href="litterbox.html">진정한 자동 화장실</a></li>
+        <li><a href="comfort.html">안락함</a></li>
+        <li><a href="purrsong.html">어플리케이션</a></li>
+        <li><a href="faq.html">제품 사양 & FAQ</a></li>
+        <li><a href="about.html">회사소개</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<section id="litterbox1">
+  <div class="container">
+    <h1>진정한 의미의 자동 화장실</h1>
+  </div>
+</section>
+
+<section class="mid_panel">
+  <div class="container">
+    <h4>길어진 관리주기</h4>
+    <p id="link3">라비봇의 관리주기는 최대 3주로(고양이 한 마리 기준), 6.5L의 모래 저장통과 자동 모래보충 기능을 통해 유저에게 편리함을 제공합니다.</p>
+  </div>
+</section>
+
+<section id="litterbox2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 rect_wrapper">
+        <div class="inner_wrapper" style="position: relative;">
+
+          <h3 class="font-white clearfix" style="width: 100%;">
+            자동 청소 기능
+            <button id="videoBtn" class="btn_video2 btn btn-default float-right" data-toggle="modal" data-target=".bd-example-modal-lg">영상 보기</button>
+          </h3>
+          <img class="rect_img" src="img/litterbox/litterbox2.gif">
+          <p class="font-white">기존 출시 제품들은 갈퀴 뒤편으로 배설물이 넘어가거나, 모래의 모터 침투로 인한 잔고장이 자주 발생합니다. 하지만 라비봇에 적용된 회전형 갈퀴 시스템은 우수한 배설물 분리는 물론 모래의 모터 침투 또한 차단해줍니다.
+고양이가 배변을 마치면 사용자가 설정한 대기시간이 지난 뒤 자동으로 청소를 시작합니다. 대기시간은 20분부터 2시간까지, 20분 단위로 설정이 가능하여 묽은 대변(설사)도 충분히 굳힌 후 깔끔하게 처리가 가능합니다.
+</p>
+
+        </div>
+      </div>
+      <div class="col-sm-6 rect_wrapper">
+        <div class="inner_wrapper">
+          <h3>&nbsp;</h3>
+          <div class="clearfix">
+              <img class="float" src="img/litterbox/s_img1.png">
+              <img class="float" src="img/litterbox/s_img2.png" style="margin-top: 17px; margin-left: 57px">
+          </div>
+          <p class="font-white" style="margin:0"><span style="font-family:NotoSansCJKkr-Bold">1. 갈퀴 오염 방지</span><br>갈퀴와 배설물의 접촉 면적을 넓힌 설계를 통해 청소 중 갈퀴가 배설물에 파고 들지 않으므로 배설물 덩어리를 조각 내지 않습니다. 또한 반려묘가 갈퀴 가까이에서 소변을 보는 경우, 모래가 굳는 동안 소변이 갈퀴에 닿지 않게 갈퀴를 설계하여 모래가 갈퀴에 덩어리로 응고되는 것을 방지합니다.</p>
+          <br><br>
+          <div class="clearfix">
+              <img class="float" src="img/litterbox/s_img3.png">
+          </div>
+          <p id="link4" class="font-white" style="margin:0"><span style="font-family:NotoSansCJKkr-Bold">2. 배변베드 오염 방지</span><br>FDA 승인을 받은 특수 PTFE 코팅을 적용하여 반려묘가 모래를 깊게 파거나 측면에 배설물을 보는 경우에도 배설물이 눌어붙지 않아 배변베드가 청결하고 위생적으로 유지됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="litterbox3" class="bg-d3d3d3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5 rect_wrapper">
+        <div class="inner_wrapper">
+          <h3>모래 보충 기능</h3>
+          <img class="rect_img" src="img/litterbox/Refill.gif">
+        </div>
+      </div>
+      <div class="col-sm-5 rect_wrapper">
+        <div class="inner_wrapper">
+          <p>라비봇은 약 6.5 L의 모래를 추가로 저장해 둘 수 있는 모래 저장통이 있습니다. 버려진 모래만큼 자동으로 모래를 보충해주는 시스템을 통해 화장실 내부를 항상 최상의 상태로 유지합니다.</p>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-left">
+  <a href="about.html"><p>About Lavviebot</p></a>
+  <br>
+  <p>Copyright &copy; 2016 lavviebot All Rights Reserved.</p>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>라비봇의 새 소식과 공지를 뉴스레터로 받아보세요</p>
+        <div class="input-group my_search_input_group">
+          <input type="text" class="form-control my_input" placeholder="이메일 주소">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">구독하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="Modal_Video" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls="controls" id="video_file">
+                        <source id="videoSrc" src="img/litterbox/litterbox.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(document).on('click', "#videoBtn", function (e) {
+  $("#video_file").load();
+
+});
+$(document).on('click', '#video_file', function (e) {
+    var video = $(this).get(0);
+
+    if (video.paused === false) {
+        video.pause();
+    } else {
+        video.play();
+    }
+
+    return false;
+});
+$(document).ready(function(){
+  $('#Modal_Video').on('hidden.bs.modal', function () {
+      //Video를 중지하도록 합니다.
+      var video = $('#video_file').get(0);
+      if (video.paused === false) {
+          video.pause();
+      }
+  })
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
