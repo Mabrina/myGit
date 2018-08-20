@@ -411,9 +411,8 @@ h1 .bold {
 }
 
 .mid_panel {
-  height: 210px;
   background: #000;
-  padding-top: 51px;
+  padding: 51px;
   text-align: center;
 }
 .mid_panel h4 {
@@ -535,7 +534,9 @@ h1 .bold {
 #litterbox2 {
   background: url(../img/litterbox/litterbox2.png) no-repeat center center/cover;
 }
-
+#litterbox2 .rect_wrapper{
+  height: 55vw;
+}
 .clearfix:after { content:"."; display: block; visibility: hidden; height: 0; clear: both; }
 .clearfix { display: inline-block; }
 .float { float: left; }
@@ -610,7 +611,7 @@ h1 .bold {
   background: url(../img/purrsong/purrsong3-1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 130px;
+  margin-top: 20%;
   margin-left: 50%;
 }
 
@@ -908,7 +909,6 @@ footer p {
 
   .mid_panel {
     padding-top: 30px;
-    height: 230px;
   }
   .mid_panel h4 {
     font-size: 20px;
